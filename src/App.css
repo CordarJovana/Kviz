@@ -23,6 +23,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.page-container{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+
+}
+
+.content-wrap{
+flex:1;
+}
 
 .App-link {
   color: #61dafb;
@@ -35,4 +45,5 @@
   to {
     transform: rotate(360deg);
   }
+  
 }
