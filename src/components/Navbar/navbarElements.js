@@ -18,9 +18,9 @@ display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
+padding-left: 0px;
 height: 100%;
 cursor: pointer;
-
 &.active{
     color: #15cdfc;
 }
@@ -44,11 +44,8 @@ color:#fff;
 export const NavMenu=styled.div`
 display: flex;
 align-items: center;
-margin-right: -24px;
-
-@media screen and (max-width: 768px){
-    display: none;
-}
+font-size: 150%;
+padding-right:10px;
 `;
 
 export const NavBtn=styled.nav`

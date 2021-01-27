@@ -1,12 +1,12 @@
 import React from 'react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './navbarElements';
-
+import slika from './logo.jpg';
 const Navbar=()=>{
     return (
         <div>
             <Nav>
-                <NavLink to="/">
-                    <img src={require('../../images/logo-social.png')} alt="logo"/>
+            <NavLink to="/">
+                    <img src={slika} alt="logo"/>
                 </NavLink>
                 <Bars />
                 <NavMenu>
@@ -17,7 +17,7 @@ const Navbar=()=>{
                     Proba
                 </NavLink>
                 </NavMenu>
-                <NavBtn></NavBtn>
+                
             </Nav>
         </div>
     );};
