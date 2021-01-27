@@ -1,15 +1,21 @@
-import React from 'react';
+import React from "react";
+import { Inject, ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, EventSettingsModel} from '@syncfusion/ej2-react-schedule'
+import {DataManager, WebApiAdaptor} from '@syncfusion/ej2-data';
+class Utisci extends React.Component{
+  //localData= EventSettingsModel={dataSource:[{EndTime: new Date(2019,0,11,6,30),
+  //StartTime: new Date(2019,0,11,4,0)}]};
 
-const Utisci=()=>{
-    return(
-        <div className="sve1">
-        <div style={
-            {display: 'flex', justifyContent:'center', alignItems: 'center', height: '90vh'}
-        }>
-            <h1>Utisci</h1>
-        </div>
-        </div>
-    )
-}
+  remoteData=new DataManager({
+    url:'https://js.syncfusion.com/demos/ejservices/api/Schedule/LoadData',
+    adaptor: new WebApiAdaptor,
+    crossDomain: true
+  });
 
-export default Utisci
+   render(){
+    return <ScheduleComponent currentView='Month' selectedDate={new Date(2017,5,5)} eventSettings={{dataSource: this.remoteData}}>
+      <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
+    </ScheduleComponent>
+  }}
+  export default Utisci;
+
+

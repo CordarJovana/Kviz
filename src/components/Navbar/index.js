@@ -17,7 +17,7 @@ const Navbar=()=>{
                     O nama
                 </NavLink>
                 <NavLink to="/utisci" activeStyle>
-                    Vaši utisci
+                    Zakažite termin
                 </NavLink>
                 </NavMenu>
                 
