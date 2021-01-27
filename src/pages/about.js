@@ -11,11 +11,11 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const data=[
     {id:1,
     naslov:'Laboratorija', 
-tekst:'Neki tekst',
+tekst:'U laboratoriji možete uraditi hematološke, biohemijske i druge analize.',
 picture:"/1.jpg"},
 {id:2,
     naslov:'Pedijatar', 
-    tekst:'Neki tekst',
+    tekst:'Obezbedite svom detetu najboljeg doktora koji' ,
 picture:"/2.jpg"},
 {id:3,
     naslov:'Dermatolog', 
@@ -54,7 +54,7 @@ const About=()=>{
                      <img src={user.picture} alt="" className="user-photo"/>
                      </div>
                      <h5 className="naslov">{user.naslov}</h5>
-                     <p className="user-testimonial">{user.tekst}</p>
+                     
               </div>
           </SwiperSlide>
       ))}
