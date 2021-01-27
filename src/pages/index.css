@@ -1,10 +1,10 @@
 .sve{
-  background-image: url(pozadina3.jpg);
-  background-repeat: no-repeat;
+background-image: url(pozadina3.jpg);
+background-repeat: no-repeat;
 
-  font-style: italic;
-  font-size: 200%;
-  position: fixed;
+font-style: italic bold;
+font-size: 300%;
+position: fixed;
 display: block;
 left: 0;
 width: 100%;
@@ -12,5 +12,7 @@ height: 100%;
 
 background-size: cover;
 background-position: center center;
+
+font-family: "Times New Roman", Times, serif;
 
 }
