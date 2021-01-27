@@ -10,11 +10,14 @@ const Navbar=()=>{
                 </NavLink>
                 <Bars />
                 <NavMenu>
-                <NavLink to="/about" activeStyle>
-                    About
+                <NavLink to="/" activeStyle>
+                    Početna
                 </NavLink>
                 <NavLink to="/about" activeStyle>
-                    Proba
+                    O nama
+                </NavLink>
+                <NavLink to="/utisci" activeStyle>
+                    Vaši utisci
                 </NavLink>
                 </NavMenu>
                 

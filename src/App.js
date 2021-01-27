@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
 import Footer from './components/Footer/Footer';
+import Utisci from './pages/utisci';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
      <Switch>
        <Route path="/" exact component={Home} />
        <Route path="/about" exact component={About} />
+       <Route path="/utisci" exact component={Utisci} />
      </Switch>
     </Router>
     </div>
